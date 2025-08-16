@@ -1,0 +1,25 @@
+.darkbtn {
+    width: clamp(40px, 8vw, 60px);
+    height: clamp(40px, 8vw, 60px);
+    padding: clamp(6px, 2vw, 10px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-background-color);
+    color: var(--btn-color);
+    box-shadow: 2px 2px 10px black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.darkbtn:hover {
+    background-color: rgb(168, 168, 168);
+    transform: scale(1.05);
+}
+
+.darkbtn svg {
+    width: clamp(18px, 4vw, 30px);
+    height: clamp(18px, 4vw, 30px);
+}

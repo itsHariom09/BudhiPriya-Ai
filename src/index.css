@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#root{
+  display: flex;
+}
+
+.lightmode{
+  --background-color: #f0f0f0;
+  --color: #000;
+  --btn-background-color: black;
+  --new-background-color:rgb(211, 210, 210);
+  --btn-color: white;
+  --slidebar-background-color:rgb(241, 241, 241);
+  --slidebar-color: black;
+  --light-background-color:gray;
+  --light-color: black;
+}
+
+.darkmode{
+  --background-color: #292828;
+  --new-background-color:rgb(153, 153, 153);
+  --color: #fff;
+  --btn-background-color: white;
+  --btn-color: black;
+  --slidebar-background-color:rgb(100, 98, 98);
+  --slidebar-color: white;
+  --light-background-color:white;
+  --light-color: black;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .topsection {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .headings {
+        font-size: 1.5vmax;
+        padding: 10px;
+    }
+
+    .headings span:nth-child(1) {
+        font-size: 2em;
+    }
+
+    .headings span:nth-child(2) {
+        font-size: 1.5em;
+    }
+
+    .headings span:nth-child(3) {
+        font-size: 1em;
+    }
+
+    .search input {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .aibox p {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .result {
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+
+    .slidebar {
+        position: fixed;
+        width: 70%;
+        max-width: 250px;
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .slidebar.active {
+        left: 0;
+    }
+
+    .sep {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .headings span:nth-child(1) {
+        font-size: 3em;
+    }
+
+    .headings span:nth-child(2) {
+        font-size: 2em;
+    }
+
+    .search input {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+
+    .aibox p {
+        height: auto;
+        max-height: 400px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .slidebar {
+        position: relative;
+    }
+}
+
